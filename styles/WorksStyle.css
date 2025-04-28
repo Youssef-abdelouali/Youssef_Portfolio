@@ -1,21 +1,33 @@
 @import url('/styles/style.css');
-
+/* Container */
+.Container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+   
+}
+  
 .projectMessage{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-top: 30px;
-    font-family: var(--font-main);
+    font-family: var(--font-main);  
+}
+.showCase{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
     
 }
-.projectMessage h1{
+.showCase h1{
     font-size: 52px;
     color: #000000;
-    margin: 20px 0;
+    
 }
 .myProject{
-    width: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
 }
 .myProject ul{
@@ -25,26 +37,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-family: var(--font-main);
-    
 }
 .myProject ul li{
-    margin: 10px 0;
-    font-size: 45px;
-    color: #000000;
-    cursor: pointer;
-}
-.myProject ul li:hover{
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-.myProject ul li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 50px;
-    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-main);
 }
 .back:before{
     content:"Back";
@@ -59,3 +58,25 @@
   .back:hover:before{
     width:100%;
   }
+
+.project-item {
+    margin-block: 10px;
+    font-size: 25px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+  }
+  .project-item span:hover{
+    transform: scale(1.1) translateY(-5px)  !important;
+    text-shadow: 0 0 5px #000000,;
+    transition: all 0.5s ease-in-out;
+}
+  .project-item-title {
+    position: relative;
+    color: black;
+    text-align: center;
+    font-size: larger;
+  }
+  
+ 
