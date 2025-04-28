@@ -1,0 +1,249 @@
+/* Root settings */
+:root {
+  --font-main:"Montserrat", sans-serif;
+  --bg-color: #4f6c5e;
+  --text-color: #000000;
+  --accent: #000000;
+}
+
+/* Reset basic styling */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  z-index: -1;
+  margin: 0;
+  padding: 10px;
+  height: auto;
+  color: var(--text-color);
+  letter-spacing: 0px; 
+  background-color: whitesmoke;
+   
+}
+
+/* Container */
+.Container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  height: 90vh;
+  padding: 1rem;
+  gap: 0.5rem;
+  font-family: var(--font-main);
+  border-radius: 5px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  
+  }
+
+/* Header */
+._Header {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+/* Freelance & online status */
+.freelance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  height: fit-content;
+}
+.aval {
+  margin-inline-start: 10px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.en_ligne {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(43, 171, 54);
+  border-radius: 50%;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.logo:hover {
+  cursor: pointer;
+}
+/* Name and Position */
+.name {
+  display: flex;
+  place-self: center;
+  flex: auto;
+  justify-content: center;
+}
+._Position {
+  margin: 0;
+  padding: 0;
+  
+}
+._Position .title-front,
+._Position .title-developer {
+  font-size: 100px;
+ 
+}
+
+.line {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+  height: 10px;
+  background-color: var(--text-color);
+  margin: 0 10px;
+  transform: translateY(-2px);
+  border-radius: 5px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #111;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav span a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+.nav span:hover {
+  cursor: pointer;
+}
+
+/* Footer */
+._Footer {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  height: fit-content;
+}
+
+/* Location */
+.location {
+  display: flex;
+  align-items: end;
+}
+.location span {
+
+  color: var(--text-color);
+  margin-left: 10px;
+}
+.location img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  color: var(--text-color);
+}
+
+/* Extra extra small devices (phones, 300px and down) */
+@media only screen and (max-width: 300px) {
+  body {
+    height: 100vh;
+  }
+  ._Header {
+    justify-content: space-between;
+    width: auto;
+  }
+  .line {
+    width: 20%;
+    margin: 0;
+  }
+  .freelance, .logo, .time {
+    font-size: 15px;
+  }
+  .en_ligne {
+    width: 8px;
+    height: 8px;
+  }
+  ._Position {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .title-front,
+  .title-developer {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 301px) and (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
+  ._Header {
+    width: 100%;
+  }
+  .freelance, .logo, .time {
+    font-size: 15px;
+  }
+  ._Position {
+    width: 100%;
+  }
+  .title-front,
+  .title-developer {
+    font-size: 50px;
+  }
+  .line {
+    display: none;
+    width: 30%;
+    height: 2px;
+    background-color: var(--text-color);
+    margin: 0 10px;
+    transform: translateY(-2px);
+  }
+}
+
+/* Add custom styles for each of these as needed */
+@media only screen and (min-width: 600px) { }
+@media only screen and (min-width: 768px) { }
+@media only screen and (min-width: 992px) { }
+@media only screen and (min-width: 1200px) { }

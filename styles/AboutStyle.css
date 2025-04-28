@@ -1,0 +1,56 @@
+@import url("/styles/style.css");
+.About_Title{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 50px;
+   font-family: var(--font-main);
+}
+.about_word{
+    width: 100%;
+}
+.about_word h1{
+   font-size: 100px;
+   color: #000000;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   width: inherit;
+
+}
+.About_Title .Who_iam{
+   font-size: 50px;
+   line-gap-override: 1.5em; 
+   text-align: center;
+}
+footer{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 50px;
+}
+footer .back{
+   width: 70px;
+   height: 70px;
+   cursor: pointer;
+   position: relative;
+}
+.back:before{
+   content:"Back";
+   position:absolute;
+   font-weight: bolder;
+   top:0;
+   left:0;
+   width:0%;
+   overflow:hidden;
+   transition:all 0.5s;
+ }
+ .back:hover:before{
+   width:100%;
+ }

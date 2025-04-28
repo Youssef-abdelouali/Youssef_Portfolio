@@ -1,0 +1,61 @@
+@import url('/styles/style.css');
+
+.projectMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    font-family: var(--font-main);
+    
+}
+.projectMessage h1{
+    font-size: 52px;
+    color: #000000;
+    margin: 20px 0;
+}
+.myProject{
+    width: fit-content;
+
+}
+.myProject ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-main);
+    
+}
+.myProject ul li{
+    margin: 10px 0;
+    font-size: 45px;
+    color: #000000;
+    cursor: pointer;
+}
+.myProject ul li:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.myProject ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 50px;
+    cursor: pointer;
+}
+.back:before{
+    content:"Back";
+    position:absolute;
+    font-weight: bolder;
+    top:0;
+    left:0;
+    width:0%;
+    overflow:hidden;
+    transition:all 0.5s;
+  }
+  .back:hover:before{
+    width:100%;
+  }
