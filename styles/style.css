@@ -178,70 +178,40 @@ body {
   color: var(--text-color);
 }
 
-/* Extra extra small devices (phones, 300px and down) */
-@media only screen and (max-width: 300px) {
-  body {
-    height: 100vh;
+
+@media screen  and (max-width: 575.98px) {
+  /* Your mobile styles */
+  .Container {
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100%;
   }
   ._Header {
-    justify-content: space-between;
-    width: auto;
-  }
-  .line {
-    width: 20%;
-    margin: 0;
-  }
-  .freelance, .logo, .time {
-    font-size: 15px;
-  }
-  .en_ligne {
-    width: 8px;
-    height: 8px;
-  }
-  ._Position {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    font-size: small; 
+    background-color: #4f6c5e; 
+    width: 100%;
+  }
+  ._Position{
+    display: flex;
     flex-direction: column;
-  }
-  .title-front,
-  .title-developer {
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-  }
-}
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    background-color: antiquewhite;
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 301px) and (max-width: 600px) {
-  body {
-    height: 100vh;
   }
-  ._Header {
-    width: 100%;
-  }
-  .freelance, .logo, .time {
-    font-size: 15px;
-  }
-  ._Position {
-    width: 100%;
-  }
-  .title-front,
-  .title-developer {
+  ._Position .title-front,
+  ._Position .title-developer {
     font-size: 50px;
+  
   }
-  .line {
-    display: none;
-    width: 30%;
-    height: 2px;
-    background-color: var(--text-color);
-    margin: 0 10px;
-    transform: translateY(-2px);
-  }
+  ._Position .line {
+    height: 5px;
+    width: 150px;
+    display: none
+  };
 }
 
-/* Add custom styles for each of these as needed */
-@media only screen and (min-width: 600px) { }
-@media only screen and (min-width: 768px) { }
-@media only screen and (min-width: 992px) { }
-@media only screen and (min-width: 1200px) { }
