@@ -258,5 +258,43 @@ body {
   }
 
 }
+/* Medium devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Tablet styles */
+  .Container {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    height: auto;
+    width: auto;
+  }
+  ._Header {
+    display: flex;
+    justify-content: space-between;
+    font-size: small; 
+    background-color: #4f6c5e; 
+    width: 100%;
+    height: fit-content;
+    margin: 0px;
+  }
+  ._Position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: antiquewhite;
+
+  }
+  ._Position .title-front,
+  ._Position .title-developer {
+    font-size:80px;
+  }
+  .line{
+    width: 100px;
+    height: 4px;
+
+  }
+}
+
 
 
