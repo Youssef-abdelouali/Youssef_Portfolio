@@ -74,7 +74,6 @@ footer .back{
      display: flex;
      justify-content: space-between;
      font-size: small; 
-     background-color: #4f6c5e; 
      width: 100%;
      height: fit-content;
      padding: 10px;
@@ -115,7 +114,6 @@ footer .back{
      display: flex;
      justify-content: space-between;
      font-size: small; 
-     background-color: #4f6c5e; 
      width: 100%;
      height: fit-content;
      margin: 0px;
@@ -134,7 +132,6 @@ footer .back{
    ._Header {
      display: flex;
      justify-content: space-between;
-     background-color: #4f6c5e; 
      width: 100%;
      height: fit-content;
      margin: 0px;
