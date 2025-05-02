@@ -296,5 +296,41 @@ body {
   }
 }
 
+/* Large devices (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Laptop styles */
+  .Container {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    height: auto;
+    width: auto;
+  }
+  ._Header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4f6c5e; 
+    width: 100%;
+    height: fit-content;
+    margin: 0px;
+  }
+  ._Position{
+
+    height: auto;
+    width: 100%;
+    background-color: antiquewhite;
+
+  }
+  ._Position .title-front,
+  ._Position .title-developer {
+    font-size:120px;
+  }
+  .line{
+    width: 200px;
+    height: 10px;
+
+  }
+}
+
+
 
 
