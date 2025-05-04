@@ -1,6 +1,10 @@
 @import url("/styles/style.css");
 
+* {
 
+  letter-spacing: -1px;
+
+}
 .About_Title{
    width: 100%;
    height: auto;

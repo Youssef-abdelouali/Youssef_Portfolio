@@ -1,4 +1,9 @@
 @import url("styles.css");
+* {
+
+   letter-spacing: -1px;
+ 
+ }
 .Container {
    display: grid;
    grid-template-rows: 1fr 1fr 1fr ;

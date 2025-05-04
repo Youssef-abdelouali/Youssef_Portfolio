@@ -7,6 +7,11 @@
 }
 
 /* Reset basic styling */
+* {
+
+  letter-spacing: -1px;
+
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
