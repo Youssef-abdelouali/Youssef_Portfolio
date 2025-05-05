@@ -219,8 +219,9 @@ body {
   
   }
   ._Position .line {
-    display: none
-  };
+    display: none;
+
+  }
 }
 
 /* Small devices (576px to 767px) */

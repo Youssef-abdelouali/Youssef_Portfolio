@@ -29,8 +29,11 @@
 }
 .About_Title .Who_iam{
    font-size: 50px;
-   line-gap-override: 1.5em; 
    text-align: center;
+   width: 90%;
+   display: flex;
+   word-wrap: break-word;
+
 }
 footer{
    width: 100%;
