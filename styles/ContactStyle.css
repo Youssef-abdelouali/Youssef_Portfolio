@@ -80,6 +80,12 @@
     display: flex;
 
  }
+ .Contact_Way :nth-child(2) span a{
+    text-decoration: none;
+    color: #000000; 
+    
+ }
+
  .Contact_Icon:hover{
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
