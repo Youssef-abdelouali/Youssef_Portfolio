@@ -49,6 +49,8 @@ footer .back{
    height: 70px;
    cursor: pointer;
    position: relative;
+
+
 }
 .back:before{
    content:"Back";
